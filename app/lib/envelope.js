@@ -19,7 +19,7 @@ class Envelope {
     this.gainParams.linearRampToValueAtTime(sustain, startDecayAt + decay);
 
     if (length){
-      setTimeout(() => { this.release(); }, length * 1000);
+      setTimeout(() => { this.release(); }, length);
     }
   }
   release() {
